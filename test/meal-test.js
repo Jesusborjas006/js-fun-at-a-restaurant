@@ -81,7 +81,7 @@ describe("meal.js", function() {
       addIngredients("cheese", ingredients);
       addIngredients("peppers", ingredients);
       addIngredients("peppers", ingredients);
-
+      console.log(ingredients.length)
       assert.equal(ingredients.length, 2);
       assert.deepEqual(ingredients, ["cheese", "peppers"]);
     })

@@ -13,11 +13,21 @@ function createMenuItem(name, price, type) {
 return menuItem
 }
 
-var ingredients = []
+// var ingredients = []
 
 function addIngredients(ingredient, ingredients) {
-  ingredients.push(ingredient);
-  return ingredients;
+
+  if(!ingredients.includes(ingredient)) {
+    ingredients.push(ingredient);
+    return ingredients;
+  };
+
+
+
+
+
+
+  // .includes()
 
   // if (/*ingredient has more than one  */) {
   //   // remove the extra item
